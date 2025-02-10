@@ -92,7 +92,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  block-size: 100%;
 }
 
 .wrapper > * {
