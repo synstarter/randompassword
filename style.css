@@ -219,6 +219,7 @@ input[type="radio"]:checked::before {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .prim-cta {
@@ -275,6 +276,10 @@ input[type="radio"]:checked::before {
 }
 
 .sec-cta {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: var(--text-primary-color) !important;
   inline-size: fit-content;
   justify-content: start;
   padding: var(--spacing-xs) var(--spacing-s);
