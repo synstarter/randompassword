@@ -256,6 +256,7 @@ input[type="radio"]:checked::before {
 
 .with-password {
   background: var(--background-enabled-color);
+  border: 1px dashed var(--brand-primary-color);
 }
 
 .pwd-inactive-value {
@@ -267,8 +268,13 @@ input[type="radio"]:checked::before {
   font-weight: var(--font-weight-medium);
 }
 
+.copy-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .sec-cta {
-  display: none;
   inline-size: fit-content;
   justify-content: start;
   padding: var(--spacing-xs) var(--spacing-s);
@@ -282,6 +288,14 @@ input[type="radio"]:checked::before {
   background: rgba(0, 0, 0, 0.04);
 }
 
+.hidden {
+  display: none;
+}
+
+.success-msg {
+  color: var(--success-color);
+}
+
 /* Media queries */
 @media (width > 550px) {
   .wrapper {
@@ -293,10 +307,6 @@ input[type="radio"]:checked::before {
     flex-direction: row;
     gap: var(--spacing-m);
   }
-
-  /* .radio-group-container label {
-    font-size: var(--font-small-size);
-  } */
 
   .prim-cta {
     inline-size: fit-content;
